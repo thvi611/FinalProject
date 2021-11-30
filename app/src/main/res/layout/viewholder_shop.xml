@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/line">
+
+    <ImageView
+        android:id="@+id/shopPic"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop1" />
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Pumpkin Hummus"
+        android:textAppearance="@style/shop_name"
+        app:layout_constraintStart_toEndOf="@+id/shopPic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shopAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="Beyti Restaurant, Taksim"
+        android:textAppearance="@style/places"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shopPic"
+        app:layout_constraintTop_toBottomOf="@+id/shopName" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="11.17dp"
+        android:layout_height="10.92dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shopScore"
+        app:layout_constraintStart_toEndOf="@+id/shopPic"
+        app:layout_constraintTop_toBottomOf="@+id/shopAddress"
+        app:srcCompat="@drawable/ic_round_star_24" />
+
+    <TextView
+        android:id="@+id/shopScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="4.8"
+        android:textAppearance="@style/rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/shopAddress" />
+
+    <TextView
+        android:id="@+id/shopRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="25dp"
+        android:text="(233 ratings)"
+        android:textAppearance="@style/places"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shopScore"
+        app:layout_constraintTop_toBottomOf="@+id/shopAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

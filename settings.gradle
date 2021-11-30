@@ -3,6 +3,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
+        repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
